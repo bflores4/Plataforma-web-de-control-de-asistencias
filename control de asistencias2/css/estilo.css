@@ -1,0 +1,63 @@
+.seccion {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.contenedor {
+    height: 100%;
+}
+
+.centrar {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom,
+.top {
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* nav var */
+
+header a img {
+    width: 60%;
+    display: flex;
+    margin: auto;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li a {
+    display: block;
+    background-color: #cc6633;
+    color: white;
+    padding: 1rem;
+    margin: 0.3rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+/* fondon egro */
+
+.bg-black {
+    background-color: black;
+}
+
+.titulo {
+    color: #cc6633;
+}
