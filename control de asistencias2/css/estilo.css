@@ -56,7 +56,9 @@ header nav ul li a {
 .txt-black{
     color:black;
 }
-
+.txt-white{
+    color:white;
+}
 .titulo {
   color: #cc6633;
 }
