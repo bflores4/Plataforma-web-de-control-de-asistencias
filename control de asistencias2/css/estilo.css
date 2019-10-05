@@ -6,7 +6,11 @@
 }
 
 .contenedor {
+  max-width: 100%;
   height: 100%;
+  margin: irem auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .centrar {
@@ -16,15 +20,22 @@
   align-items: center;
   justify-content: center;
 }
+.centrarOneScreen {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
 
-.cenVer{
+.cenVer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.cenHor{
+.cenHor {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,6 +47,7 @@
   max-width: 100%;
   align-items: center;
   justify-content: center;
+  background-color: transparent;
 }
 
 /* nav var */
@@ -63,11 +75,18 @@ header nav ul li a {
 }
 
 .imgContainer {
-  width: 20%;
-  display: flex;
-  margin: auto;
+  width: 100%;
+  margin: 5px;
 }
+#udcIndex {
+  background-image: url("file:///udcCampus.jpg");
 
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 /* fondon negro */
 .bg-black {
   background-color: black;
@@ -81,6 +100,12 @@ header nav ul li a {
 .titulo {
   color: #cc6633;
 }
+.txt-align {
+  text-align: center;
+}
+.upDown {
+  font-size: 3em;
+}
 .btnOrange {
   background-color: #cc6633;
   color: black;
@@ -88,11 +113,48 @@ header nav ul li a {
   margin: 0.3rem;
   border-radius: 5px;
   border: none;
+  width: 20em;
 }
 
+#opciones {
+  width: 40%;
+}
+#redSocialSeccion {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 20%;
+}
+#redSocialSeccion img {
+  height: 75%;
+  margin: 0 5px 0 5px;
+}
 /* ________________________________________________________*/
 @media (max-width: 1024px) /*x768 iPad*/ {
+  header {
+    flex-direction: column;
+  }
+  header a img {
+    margin: auto;
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  header nav {
+    display: flex;
+    justify-content: center;
+  }
 }
 /* ________________________________________________________ */
 @media (max-width: 320px) /*x568 iPhone*/ {
+  .contenido {
+    flex: 1 1 100%;
+  }
+  header nav ul {
+    flex-direction: column;
+    flex: 1 1 100%;
+    text-align: center;
+  }
+  header {
+    display: block;
+  }
 }

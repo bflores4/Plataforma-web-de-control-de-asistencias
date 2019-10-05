@@ -13,47 +13,56 @@
 
     <body>
         <div>
-            <div class="seccion">
+            <section id="main" class="seccion">
                 <header class="bg-black">
                     <nav class="navbar navbar-expand-lg">
                         <a>
                             <img id="logoUdc" src="./images/logoUDC.png" alt="logoUDC.png" />
                         </a>
-                        <ul class="text-white list-unstyled">
-                            <li><i class="fas fa-search"></i></li>
-                            <ul class="list-unstyled">
-                                <li><a href="./html/acercaDelControlAsistencia/introduccion.html"> Introduccion</a></li>
-                                <li><a href="./html/acercaDelControlAsistencia/infraestructura.html"> Infraestructura</a></li>
-                                <li><a href="./html/acercaDelControlAsistencia/contacto.html"> Contacto</a></li>
-                                <li><a href="./html/acercaDelControlAsistencia/procedimiento.html"> Procedimiento</a></li>
-                                <li><a href="./html/acercaDelControlAsistencia/normativa.html"> Normativa</a></li>
+<!-- -------------------------------------------- -->
+                            <ul class="text-white list-unstyled">
+                                <li><i class="fas fa-search"></i></li>
+                                <ul class="list-unstyled">
+                                    <li><a href="./html/acercaDelControlAsistencia/introduccion.html"> Introduccion</a>
+                                    </li>
+                                    <li><a href="./html/acercaDelControlAsistencia/infraestructura.html">
+                                            Infraestructura</a></li>
+                                    <li><a href="./html/acercaDelControlAsistencia/contacto.html"> Contacto</a></li>
+                                    <li><a href="./html/acercaDelControlAsistencia/procedimiento.html">
+                                            Procedimiento</a>
+                                    </li>
+                                    <li><a href="./html/acercaDelControlAsistencia/normativa.html"> Normativa</a></li>
+                                </ul>
                             </ul>
-                        </ul>
                     </nav>
                 </header>
-                <div class="contenedor centrar">
-                    <div class="">
-                        <h1>CONTROL DE ASISTENCIA</h1>
+                <div class="contenedor centrar ">
+                    <div class="centrar">
+                        <h1 class="display-2 text-center">
+                            CONTROL <br>
+                            DE <br>
+                            ASISTENCIA</h1>
                         <h5>Direccion General de Recursos Humanos</h5>
-                        <div>
-                            <button id="incioSesion" type="button" class="btnOrange">
-                                <a href="./html/login/bienvenidoLogin.html" class="txt-black">Iniciar sesion</a>
-                            </button>
-                        </div>
-                    </div>
 
-                    <div class="bottom">
-                        <a href="#"><i class="fas fa-angle-down txt-black"></i></a>
+                        <button id="incioSesion" type="button" class="btnOrange bottom">
+                            <a href="./html/login/bienvenidoLogin.html" class="txt-black">Iniciar sesion</a>
+                        </button>
                     </div>
                 </div>
-            </div>
-            <div class="seccion bg-black centrar">
-                <div class="top">
-                    <a href="#"><i class="fas fa-angle-up txt-white"></i></a>
+                <div class="bottom">
+                    <a href="#secInformacion"><i class="fas fa-angle-down txt-black upDown"></i></a>
                 </div>
-                <div class="cenVer">
-                    <h2 class="titulo">Introduccion al Control de Asistencia</h2>
-                    <h4 class="titulo">
+            </section>
+            <section class="seccion bg-black " id="secInformacion">
+                <div class="top">
+                    <a href="#main"><i class="fas fa-angle-up txt-white upDown"></i></a>
+                </div>
+                <div class="contenedor centrar">
+                    <h2 class="titulo display-2 text-center">
+                        Introduccion al Control<br>
+                        de Asistencia
+                    </h2>
+                    <h4 class="titulo text-center">
                         Conoce más acerca del control de asistencia biometrico y resuleve tus dudads
                     </h4>
                     <a href="./html/acercaDelControlAsistencia/introduccion.html">
@@ -61,37 +70,49 @@
                     </a>
                 </div>
                 <div class="bottom">
-                    <a href="#"><i class="fas fa-angle-down text-white"></i></a>
+                    <a href="#mainProcesos"><i class="fas fa-angle-down text-white upDown"></i></a>
                 </div>
-            </div>
-            <div class="seccion centrar">
+            </section>
+            <section id="mainProcesos" class="seccion">
                 <div class="top">
-                    <a href="#"><i class="fas fa-angle-up txt-black"></i></a>
+                    <a href="#secInformacion"><i class="fas fa-angle-up txt-black upDown"></i></a>
                 </div>
-                <div class="">
+                <div class="centrar">
                     <div>
-                        <h2>Acerca del control de asistencia</h2>
+                        <h2 class="titulo display-4 text-center">Acerca del control de asistencia</h2>
                     </div>
-                    <!-- <div>
-                        <div>
-                            <a href="./html/acercaDelControlAsistencia/infraestructura.html"><img
-                                    src="./images/SVG/infraestructura.svg" alt="infraestructura.svg" /></a>
-                            <a href="./html/acercaDelControlAsistencia/normativa.html"> <img
-                                    src="./images/SVG/normativa.svg" alt="normativa.svg" /></a>
+                    <div id="opciones" class="cenHor">
+                        <div id="" class="imgContainer">
+                            <div class="imgContainer cenVer">
+                                <img src="./images/SVG/infraestructura.svg" alt="infraestructura.svg" />
+                                <a class="txt-black text-center"
+                                    href="./html/acercaDelControlAsistencia/infraestructura.html">Infraestructura</a>
+                            </div>
+                            <div class="imgContainer cenVer">
+                                <img src="./images/SVG/normativa.svg" alt="normativa.svg" />
+                                <a class="txt-black text-center"
+                                    href="./html/acercaDelControlAsistencia/infraestructura.html">Normativa</a>
+                            </div>
                         </div>
-                        <div>
-                            <a href="./html/acercaDelControlAsistencia/procedimiento.html"><img
-                                    src="./images/SVG/procesos.svg" alt="procesos.svg" /></a>
-                            <a href="./html/acercaDelControlAsistencia/contacto.html"><img 
-                                src="./images/SVG/contacto.svg" alt="contacto.svg" /></a>
+                        <div class="imgContainer ">
+                            <div class="imgContainer cenVer">
+                                <img src="./images/SVG/procesos.svg" alt="procesos.svg" />
+                                <a class="txt-black text-center"
+                                    href="./html/acercaDelControlAsistencia/procedimiento.html">Procesos</a>
+                            </div>
+                            <div class="imgContainer cenVer">
+                                <img src="./images/SVG/contacto.svg" alt="contacto.svg" />
+                                <a class="txt-black text-center"
+                                    href="./html/acercaDelControlAsistencia/contacto.html">Contacto</a>
+                            </div>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
-                <div id="redSocialSeccion" class="bottom bg-black">
-                    <img src="./images/SVG/facebook.svg" alt="facebook.svg" />
+                <div id="redSocialSeccion" class="bg-black">
+                    <img class="" src="./images/SVG/facebook.svg" alt="facebook.svg" />
                     <img src="./images/SVG/twitter.svg" alt="twitter.svg" />
                 </div>
-            </div>
+            </section>
         </div>
     </body>
 
