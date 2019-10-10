@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="seccion">
+    <section id="asistenciasMain" class="seccion">
         <header class="bg-black">
             <nav class="navbar navbar-expand-lg">
                 <a href="https://www.ucol.mx">
@@ -30,49 +30,57 @@
                 </ul>
             </nav>
         </header>
-        <div>
-            <h1>Reporte de Asistencia</h1>
-            <p>
+        <div class="contenedor centrar">
+            <h1 class="display-2">Reporte de Asistencia</h1>
+            <p class="text-center">
                 Los Reportes del Sistema de Control de
-                Asistencia pueden ser filtrados por rango
+                Asistencia pueden ser filtrados por rango<br>
                 de fechas facilitando la selección del período
-                y sin necesidad de realizar cierres del período.
+                y sin necesidad de realizar cierres del período.<br>
                 También se puede seleccionar por Trabajador, Departamento,
-                Categoría, Grupo y Turno. Se pueden exportar los reportes
-                a Archivo Texto, Word ó Excel. Formatos de Reporte:
+                Categoría, Grupo y Turno. Se pueden <br>
+                exportar los reportes a Archivo Texto, Word ó Excel. Formatos de Reporte:
             </p>
         </div>
-    </div>
+        <div class="bottom">
+            <a href="#asistecniasRepor"><i class="fas fa-angle-down txt-black upDown"></i></a>
+        </div>
+    </section>
 
-    <div class="seccion bg-black">
-        <h1 class="titulo">REPORTE</h1>
-        <div>
-            <img src="./images/flechaIzq.svg" alt="flechaIzq.svg">
-            <div>
-                <h1 class="titulo">AGOSTO DEL 2019</h1>
-                <h1 class="titulo">Días a descontar: 0.</h1>
+    <section id="asistecniasRepor" class="seccion centrar bg-black">
+        <div class="top">
+            <a href="#asistenciasMain"><i class="fas fa-angle-up txt-white upDown"></i></a>
+        </div>
+        <h1 class="titulo display-3">REPORTE</h1>
+        <div class="w-75">
+            <div class="cenHor">
+                <img class=h-90px mr-btm-5px" src="../../../images/SVG/past.svg" alt="flechaIzq.svg">
+                <div class="centrar">
+                    <h1 class="titulo">AGOSTO DEL 2019</h1>
+                    <h2 class="titulo">Días a descontar: 0.</h2>
+                </div>
+                <img class="h-90px mr-btm-5px" src="../../../images/SVG/next.svg" alt="flechaIzq.svg">
             </div>
-            <img src="./images/flechaIzq.svg" alt="flechaIzq.svg">
 
             <div>
 
-                <table class="table">
-                    <thead class="thead-dark">
+                <table class="table text-center">
+                    <thead class="thead-orange text-center">
                         <tr>
-                            <th scope="col">Día</th>
-                            <th scope="col">Retardos</th>
-                            <th scope="col">Faltas</th>
-                            <th scope="col">Justificación</th>
+                            <th scope="col">DIA</th>
+                            <th scope="col">RETARDOS</th>
+                            <th scope="col">FALTAS</th>
+                            <th scope="col">JUSTIFUCACION</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="txt-white">
                         <tr>
                             <th scope="row">1</th>
                             <td>1</td>
                             <td>0</td>
                             <td>
                                 Ninguna
-                                <img src="./images/mas.svg" alt="mas.svg">
+                                <img class="imgIcon" src="../../../images/SVG/more.svg" alt="mas.svg">
                             </td>
                         </tr>
                         <tr>
@@ -81,7 +89,7 @@
                             <td>0</td>
                             <td>
                                 Jornada Especial
-                                <img src="./images/mas.svg" alt="mas.svg">
+                                <img class="imgIcon" src="../../../images/SVG/more.svg" alt="mas.svg">
                             </td>
                         </tr>
                         <tr>
@@ -90,22 +98,23 @@
                             <td>1</td>
                             <td>
                                 Ninguna
-                                <img src="./images/mas.svg" alt="mas.svg">
+                                <img class="imgIcon" src="../../../images/SVG/more.svg" alt="mas.svg">
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">1</th>
                             <td>1</td>
                             <td>0</td>
-
+                            <td></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
-        <a href="../bienvenidoLogin.html"> <img src="./images/atras.svg" alt="atras.png"></a>
-    </div>
-
+        <a href="../bienvenidoLogin.html">
+            <img class="h-120px mr-btm-5px" src="../../../images/SVG/atras-white.svg" alt="atras.png">
+        </a>
+    </section>
 
 </body>
 

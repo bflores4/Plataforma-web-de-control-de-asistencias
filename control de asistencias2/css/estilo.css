@@ -136,6 +136,9 @@ header nav ul li a {
 .br-rd{
   border-radius: 15px;
 }
+.spacebtw{
+  justify-content: space-evenly;
+}
 #opciones {
   width: 40%;
 }
