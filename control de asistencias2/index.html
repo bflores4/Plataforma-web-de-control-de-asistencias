@@ -19,21 +19,21 @@
                         <a>
                             <img id="logoUdc" src="./images/logoUDC.png" alt="logoUDC.png" />
                         </a>
-<!-- -------------------------------------------- -->
-                            <ul class="text-white list-unstyled">
-                                <li><i class="fas fa-search"></i></li>
-                                <ul class="list-unstyled">
-                                    <li><a href="./html/acercaDelControlAsistencia/introduccion.html"> Introduccion</a>
-                                    </li>
-                                    <li><a href="./html/acercaDelControlAsistencia/infraestructura.html">
-                                            Infraestructura</a></li>
-                                    <li><a href="./html/acercaDelControlAsistencia/contacto.html"> Contacto</a></li>
-                                    <li><a href="./html/acercaDelControlAsistencia/procedimiento.html">
-                                            Procedimiento</a>
-                                    </li>
-                                    <li><a href="./html/acercaDelControlAsistencia/normativa.html"> Normativa</a></li>
-                                </ul>
+                        <!-- -------------------------------------------- -->
+                        <ul class="text-white list-unstyled">
+                            <li><i class="fas fa-search upDown"></i></li>
+                            <ul class="list-unstyled">
+                                <li><a href="./html/acercaDelControlAsistencia/introduccion.html"> Introduccion</a>
+                                </li>
+                                <li><a href="./html/acercaDelControlAsistencia/infraestructura.html">
+                                        Infraestructura</a></li>
+                                <li><a href="./html/acercaDelControlAsistencia/contacto.html"> Contacto</a></li>
+                                <li><a href="./html/acercaDelControlAsistencia/procedimiento.html">
+                                        Procedimiento</a>
+                                </li>
+                                <li><a href="./html/acercaDelControlAsistencia/normativa.html"> Normativa</a></li>
                             </ul>
+                        </ul>
                     </nav>
                 </header>
                 <div class="contenedor centrar ">
@@ -44,9 +44,10 @@
                             ASISTENCIA</h1>
                         <h5>Direccion General de Recursos Humanos</h5>
 
-                        <button id="incioSesion" type="button" class="btnOrange bottom">
-                            <a href="./html/login/bienvenidoLogin.html" class="txt-black">Iniciar sesion</a>
-                        </button>
+                        <form method="get" action="./html/login/bienvenidoLogin.html">
+                            <button id="incioSesion" type="submit" class="btnOrange bottom"><a class="txt-black">Iniciar
+                                    sesion</a></button>
+                        </form>
                     </div>
                 </div>
                 <div class="bottom">
@@ -74,34 +75,44 @@
                 </div>
             </section>
             <section id="mainProcesos" class="seccion">
-                <div class="top">
-                    <a href="#secInformacion"><i class="fas fa-angle-up txt-black upDown"></i></a>
-                </div>
                 <div class="centrar">
-                    <div>
-                        <h2 class="titulo display-4 text-center">Acerca del control de asistencia</h2>
+                    <div class="top">
+                        <a href="#secInformacion"><i class="fas fa-angle-up txt-black upDown"></i></a>
+                    </div>
+                    <div class="">
+                        <h1 class="display-3 ">Procedimeintos</h1>
+                        <h5 class="text-center">Selecciona una opcion:</h5>
                     </div>
                     <div id="opciones" class="cenHor">
                         <div id="" class="imgContainer">
                             <div class="imgContainer cenVer">
-                                <img src="./images/SVG/infraestructura.svg" alt="infraestructura.svg" />
+                                <a href="./html/acercaDelControlAsistencia/infraestructura.html">
+                                    <img class="w-100" src="./images/SVG/infraestructura.svg"
+                                        alt="infraestructura.svg" />
+                                </a>
                                 <a class="txt-black text-center"
                                     href="./html/acercaDelControlAsistencia/infraestructura.html">Infraestructura</a>
                             </div>
                             <div class="imgContainer cenVer">
-                                <img src="./images/SVG/normativa.svg" alt="normativa.svg" />
+                                <a href="./html/acercaDelControlAsistencia/normativa.html">
+                                    <img class="w-100" src="./images/SVG/normativa.svg" alt="normativa.svg" />
+                                </a>
                                 <a class="txt-black text-center"
                                     href="./html/acercaDelControlAsistencia/infraestructura.html">Normativa</a>
                             </div>
                         </div>
                         <div class="imgContainer ">
                             <div class="imgContainer cenVer">
-                                <img src="./images/SVG/procesos.svg" alt="procesos.svg" />
+                                <a href="./html/acercaDelControlAsistencia/procedimiento.html">
+                                    <img class="w-100" src="./images/SVG/procesos.svg" alt="procesos.svg" />
+                                </a>
                                 <a class="txt-black text-center"
-                                    href="./html/acercaDelControlAsistencia/procedimiento.html">Procesos</a>
+                                    href="./html/acercaDelControlAsistencia/procedimiento.html">Procedimientos</a>
                             </div>
                             <div class="imgContainer cenVer">
-                                <img src="./images/SVG/contacto.svg" alt="contacto.svg" />
+                                <a href="./html/acercaDelControlAsistencia/contacto.html">
+                                    <img class="w-100" src="./images/SVG/contacto.svg" alt="contacto.svg" />
+                                </a>
                                 <a class="txt-black text-center"
                                     href="./html/acercaDelControlAsistencia/contacto.html">Contacto</a>
                             </div>

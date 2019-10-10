@@ -95,7 +95,7 @@ header nav ul li a {
   color: black;
 }
 .txt-white {
-  color: white;
+  color: white !important;
 }
 .titulo {
   color: #cc6633;
@@ -115,7 +115,27 @@ header nav ul li a {
   border: none;
   width: 20em;
 }
-
+.thead-orange{
+  background-color: #cc6633;
+}
+.h-120px {
+  height: 120px;
+}
+.h-90px {
+  height: 89px;
+}
+.w-35 {
+  width: 35% !important;
+}
+.imgIcon{
+  height: 25px;
+}
+.mr-btm-5px{
+  margin: 5px 0px 5px 0px;
+}
+.br-rd{
+  border-radius: 15px;
+}
 #opciones {
   width: 40%;
 }

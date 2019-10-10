@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>capturar incapacidades</title>
+    <title>capturar permiso</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="seccion ">
+    <section id="capturarPerMain" class="seccion ">
         <header class="bg-black">
             <nav class="navbar navbar-expand-lg">
                 <a href="https://www.ucol.mx">
@@ -30,43 +30,52 @@
                 </ul>
             </nav>
         </header>
-        <div>
-            <h1>Soilicitar Permiso</h1>
+        <div class="contenedor centrar text-center">
+            <h1 class="display-2">Soilicitar Permiso</h1>
             <p>
-                Capturar los adatos  necesarios
-                para tu solicitud de permiso 
+                Capturar los adatos necesarios
+                para tu solicitud de permiso <br>
                 de acuerdo al reglamento interior
                 de trabajo
                 </del>
             </p>
         </div>
-        <div class="botton">
-            <a href="#">Flecha hacia abajo</a>
+        <div class="bottom">
+            <a href="#capturarPer"><i class="fas fa-angle-down txt-black upDown"></i></a>
         </div>
-    </div>
-    <div class="seccion bg-black">
-        <div>
-            <h1 class="titulo">Datos Permiso</h1>
-            <div>
-                <a class="txt-white">Inicio</a>
-                <input>
+    </section>
+    <section id="capturarPer" class="seccion bg-black centrar">
+        <div class="top">
+            <a href="#capturarPerMain"><i class="fas fa-angle-up txt-white upDown"></i></a>
+        </div>
+        <div class="w-50">
+            <h1 class="titulo display-3 text-center">Datos Permiso</h1>
+            <div class="d-flex justify-content-between mr-btm-5px">
+                <a class="txt-white display-4">Inicio</a>
+                <input class="w-50 br-rd">
             </div>
-            <div>
-                <a class="txt-white">Dias</a>
-                <input>
+            <div class="d-flex justify-content-between mr-btm-5px">
+                <a class="txt-white display-4">Dias</a>
+                <input class="w-50 br-rd">
             </div>
-            <div>
-                <a class="txt-white">Tipo</a>
-                <select>
-                    <option></option>
+            <div class="d-flex justify-content-between mr-btm-5px">
+                <a class="txt-white display-4">Tipo</a>
+                <select class="w-35 br-rd">
+                    <option>Dropdown</option>
                     <option></option>
                     <option></option>
                 </select>
             </div>
         </div>
-        <a href="./capturada.html"> <img src="./images/check.svg" alt="check.png"></a>
-        <a href="./permisos.html"> <img src="./images/atras.svg" alt="atras.png"></a>
-    </div>
+        <div class="imgContainer cenVer">
+            <a href="./capturado.html"> 
+                <img class="h-120px mr-btm-5px" src="../../../images/SVG/check.svg" alt="check.png">
+            </a>
+            <a href="./permisos.html"> 
+                <img class="h-120px mr-btm-5px" src="../../../images/SVG/atras-white.svg" alt="atras.png">
+            </a>
+        </div>
+    </section>
 
 </body>
 

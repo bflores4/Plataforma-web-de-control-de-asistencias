@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="seccion ">
+    <section id="capturarIncapMain" class="seccion ">
         <header class="bg-black">
             <nav class="navbar navbar-expand-lg">
                 <a href="https://www.ucol.mx">
@@ -30,42 +30,52 @@
                 </ul>
             </nav>
         </header>
-        <div>
-            <h1>Capturar incapacidades</h1>
+        <div class="contenedor centrar text-center">
+            <h1 class="display-2">Capturar incapacidades</h1>
             <p>
                 Capturar los adatos de tu
-                incapacidad y agrega las
+                incapacidad y agrega las<br>
                 fotografias necesarias para
                 validar el documento
             </p>
         </div>
-        <div class="botton">
-            <a href="#">Flecha hacia abajo</a>
+        <div class="bottom">
+            <a href="#capturarIncap"><i class="fas fa-angle-down txt-black upDown"></i></a>
         </div>
-    </div>
-    <div class="seccion bg-black">
-        <div>
-            <h1 class="titulo">Datos de incapacidad</h1>
-            <div>
-                <a class="txt-white">Inicio</a>
-                <input>
+    </section>
+    <section id="capturarIncap" class="seccion bg-black centrar">
+        <div class="top">
+            <a href="#capturarIncapMain"><i class="fas fa-angle-up txt-white upDown"></i></a>
+        </div>
+        <div class="w-50">
+            <h1 class="titulo display-3">Datos de incapacidad</h1>
+            <div class="d-flex justify-content-between mr-btm-5px">
+                <a class="txt-white display-4">Inicio</a>
+                <input class="w-50 br-rd">
             </div>
-            <div>
-                <a class="txt-white">Termino</a>
-                <input>
+            <div class="d-flex justify-content-between mr-btm-5px">
+                <a class="txt-white display-4">Termino</a>
+                <input class="w-50 br-rd">
             </div>
-            <div>
-                <a class="txt-white">Tipo</a>
-                <select>
-                    <option></option>
+            <div class="d-flex justify-content-between mr-btm-5px">
+                <a class="txt-white display-4">Tipo</a>
+                <select class="w-35 br-rd">
+                    <option><a class="display-4">Dropdown</a></option>
                     <option></option>
                     <option></option>
                 </select>
             </div>
         </div>
-        <a href="./capturada.html"> <img src="./images/check.svg" alt="check.png"></a>
-        <a href="./incapacidades.html"> <img src="./images/atras.svg" alt="atras.png"></a>
-    </div>
+        <div class="imgContainer cenVer">
+            <a href="./capturada.html"> 
+                <img class="h-120px mr-btm-5px" src="../../../images/SVG/check.svg" alt="check.png">
+            </a>
+            <a href="./incapacidades.html"> 
+                <img class="h-120px mr-btm-5px" src="../../../images/SVG/atras-white.svg" alt="atras.png">
+            </a>
+        </div>
+
+    </section>
 
 </body>
 

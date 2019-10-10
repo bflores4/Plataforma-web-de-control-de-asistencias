@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="seccion ">
+    <section id="permisosMain" class="seccion ">
         <header class="bg-black">
             <nav class="navbar navbar-expand-lg">
                 <a href="https://www.ucol.mx">
@@ -30,39 +30,42 @@
                 </ul>
             </nav>
         </header>
-        <div>
-            <h1>Permisos</h1>
-            <p>
+        <div class="contenedor centrar">
+            <h1 class="display-2">Permisos</h1>
+            <p class="text-center">
                 Aqui podras solicitar y verificar
-                la autorización de los
+                la autorización de los<br>
                 diferentes tipos de permisos
                 laborales.
             </p>
         </div>
-        <div class="botton">
-            <a href="#">Flecha hacia abajo</a>
+        <div class="bottom">
+            <a href="#permisosHis"><i class="fas fa-angle-down txt-black upDown"></i></a>
         </div>
-    </div>
-    <div class="seccion bg-black">
-        <h1 class="titulo">Historial</h1>
-        <div>
-            <table class="table">
-                <thead class="thead-dark">
+    </section>
+    <section id="permisosHis" class="seccion centrar bg-black">
+        <div class="top">
+            <a href="#permisosMain"><i class="fas fa-angle-up txt-white upDown"></i></a>
+        </div>
+        <h1 class="titulo display-3">Historial</h1>
+        <div class="w-75">
+            <table class="table text-center">
+                <thead class="thead-orange text-center">
                     <tr>
-                        <th scope="col">Fecha</th>
-                        <th scope="col">Dìas</th>
-                        <th scope="col">Tipo</th>
-                        <th scope="col">Estado</th>
+                        <th scope="col">FECHA</th>
+                        <th scope="col">DIAS</th>
+                        <th scope="col">TIPO</th>
+                        <th scope="col">ESTADO</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="txt-white">
                     <tr>
                         <th scope="row">15/04/2018</th>
                         <td>5</td>
                         <td>Economico</td>
                         <td>
                             A
-                            <img src="./images/mas.svg" alt="mas.svg">
+                            <img class="imgIcon" src="../../../images/SVG/more.svg" alt="mas.svg">
                         </td>
                     </tr>
                     <tr>
@@ -71,7 +74,7 @@
                         <td>Boleto Sutuc</td>
                         <td>
                             D
-                            <img src="./images/mas.svg" alt="mas.svg">
+                            <img class="imgIcon" src="../../../images/SVG/more.svg" alt="mas.svg">
                         </td>
                     </tr>
                     <tr>
@@ -80,15 +83,29 @@
                         <td>Comision</td>
                         <td>
                             P
-                            <img src="./images/mas.svg" alt="mas.svg">
+                            <img class="imgIcon" src="../../../images/SVG/more.svg" alt="mas.svg">
+                        </td>
+                    </tr>
+                    <tr class="titulo">
+                        <th scope="row">Totales</th>
+                        <td>15</td>
+                        <td></td>
+                        <td>
+    
                         </td>
                     </tr>
                 </tbody>
             </table>
         </div>
-        <a href="./solicitarPer.html"> <img src="./images/mas.svg" alt="mas.png"></a>
-        <a href="../bienvenidoLogin.html"> <img src="./images/atras.svg" alt="atras.png"></a>
-    </div>
+        <div class="imgContainer cenVer">
+            <a href="./solicitarPer.html">
+                <img class="h-120px mr-btm-5px" src="../../../images/SVG/añadir.svg" alt="añadir.png">
+            </a>
+            <a href="../bienvenidoLogin.html">
+                <img class="h-120px mr-btm-5px" src="../../../images/SVG/atras-white.svg" alt="atras.png">
+            </a>
+        </div>
+    </section>
 
 </body>
 
