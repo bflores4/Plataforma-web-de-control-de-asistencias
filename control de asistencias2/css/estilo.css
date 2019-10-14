@@ -104,7 +104,8 @@ header nav ul li a {
   text-align: center;
 }
 .upDown {
-  font-size: 3em;
+  font-size: 2em;
+  margin: 0.25em 0.5em 0em 0em;
 }
 .btnOrange {
   background-color: #cc6633;
@@ -166,18 +167,66 @@ header nav ul li a {
     display: flex;
     justify-content: center;
   }
+  header a img {
+    width: 50%;
+    display: flex;
+    margin: auto;
+  }
+  .imgContainer {
+    width: 80%;
+  } 
+  .display-2 {
+    font-size: 4rem !important;
+  }
+  .ul{
+    flex-direction: column;
+  }
+  .navbar{
+    justify-content: center !important;
+  }
+  
+  
 }
 /* ________________________________________________________ */
 @media (max-width: 320px) /*x568 iPhone*/ {
-  .contenido {
-    flex: 1 1 100%;
-  }
-  header nav ul {
-    flex-direction: column;
-    flex: 1 1 100%;
-    text-align: center;
-  }
   header {
-    display: block;
+    flex-direction: column;
+  }
+  header nav {
+    display: flex;
+    justify-content: center;
+  }
+  header a img {
+    width: 80%;
+    display: flex;
+    margin: auto;
+  }
+  h5{
+    font-size: 0.75rem !important;
+  }
+  h4{
+    font-size: 0.75rem !important;
+  }
+  .display-2 {
+    font-size: 2.5rem !important;
+  }
+  .display-3 {
+    font-size: 2.5rem !important;
+  }
+  .display-4 {
+    font-size: 2.5rem !important;
+  }
+  .ul{
+    flex-direction: column;
+  }
+  .navbar{
+    justify-content: center !important;
+  }
+  .btnOrange {
+  width: 13em;
+  }
+  .imgContainer {
+    width: 100%;
+    margin: 5px;
   }
 }

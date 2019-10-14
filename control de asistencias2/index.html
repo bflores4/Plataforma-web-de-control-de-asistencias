@@ -9,6 +9,15 @@
         <link rel="stylesheet" href="./css/estilo.css" />
         <link rel="stylesheet" href="./founts/fontawesome-free-5.11.2-web/css/all.css" />
         <link rel="stylesheet" href="./css/bootstrap.min.css" />
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
     </head>
 
     <body>
@@ -20,21 +29,46 @@
                             <img id="logoUdc" src="./images/logoUDC.png" alt="logoUDC.png" />
                         </a>
                         <!-- -------------------------------------------- -->
-                        <ul class="text-white list-unstyled">
-                            <li><i class="fas fa-search upDown"></i></li>
-                            <ul class="list-unstyled">
-                                <li><a href="./html/acercaDelControlAsistencia/introduccion.html"> Introduccion</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="border border-light"><i class="fas fa-bars txt-white"></i></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="text-white navbar-nav mr-auto text-center">
+
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="./html/acercaDelControlAsistencia/introduccion.html">
+                                        Introduccion</a>
                                 </li>
-                                <li><a href="./html/acercaDelControlAsistencia/infraestructura.html">
-                                        Infraestructura</a></li>
-                                <li><a href="./html/acercaDelControlAsistencia/contacto.html"> Contacto</a></li>
-                                <li><a href="./html/acercaDelControlAsistencia/procedimiento.html">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="./html/acercaDelControlAsistencia/infraestructura.html">
+                                        Infraestructura</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="./html/acercaDelControlAsistencia/contacto.html">
+                                        Contacto</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="./html/acercaDelControlAsistencia/procedimiento.html">
                                         Procedimiento</a>
                                 </li>
-                                <li><a href="./html/acercaDelControlAsistencia/normativa.html"> Normativa</a></li>
-                            </ul>
-                        </ul>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="./html/acercaDelControlAsistencia/normativa.html">
+                                        Normativa</a>
+                                </li>
+                                <div class="input-group md-form form-sm form-2 pl-0">
+                                    <input class="form-control my-0 py-1 amber-border" type="text" placeholder="Search"
+                                        aria-label="Search">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text amber lighten-3" id="basic-text1"><i
+                                                class="fas fa-search text-grey" aria-hidden="true"></i></span>
+                                    </div>
+                                </div>
+                        </div>
                     </nav>
+                    <!-- ------------------------------- -->
                 </header>
                 <div class="contenedor centrar ">
                     <div class="centrar">
@@ -64,11 +98,15 @@
                         de Asistencia
                     </h2>
                     <h4 class="titulo text-center">
-                        Conoce más acerca del control de asistencia biometrico y resuleve tus dudads
+                        Conoce más acerca del control de asistencia <br>
+                        biometrico y resuleve tus dudas
                     </h4>
-                    <a href="./html/acercaDelControlAsistencia/introduccion.html">
-                        <img class="imgContainer" src="./images/SVG/información.svg" alt="informacion.svg" />
-                    </a>
+                    <div class="imgContainer text-center">
+                        <a href="./html/acercaDelControlAsistencia/introduccion.html">
+                            <img class="w-25" src="./images/SVG/información.svg" alt="informacion.svg" />
+                        </a>
+                    </div>
+
                 </div>
                 <div class="bottom">
                     <a href="#mainProcesos"><i class="fas fa-angle-down text-white upDown"></i></a>
@@ -80,7 +118,7 @@
                         <a href="#secInformacion"><i class="fas fa-angle-up txt-black upDown"></i></a>
                     </div>
                     <div class="">
-                        <h1 class="display-3 ">Procedimeintos</h1>
+                        <h1 class="display-3 ">Procedimientos</h1>
                         <h5 class="text-center">Selecciona una opcion:</h5>
                     </div>
                     <div id="opciones" class="cenHor">
