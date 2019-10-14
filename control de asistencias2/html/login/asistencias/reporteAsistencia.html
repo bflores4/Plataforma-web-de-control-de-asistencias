@@ -9,37 +9,65 @@
     <link rel="stylesheet" href="../../../css/estilo.css" />
     <link rel="stylesheet" href="../../../founts/fontawesome-free-5.11.2-web/css/all.css" />
     <link rel="stylesheet" href="../../../css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
     <section id="asistenciasMain" class="seccion">
         <header class="bg-black">
             <nav class="navbar navbar-expand-lg">
-                <a href="https://www.ucol.mx">
+                <a>
                     <img id="logoUdc" src="../../../images/logoUDC.png" alt="logoUDC.png" />
                 </a>
-                <ul class="text-white list-unstyled">
-                    <li><i class="fas fa-search"></i></li>
-                    <ul class="list-unstyled">
-                        <li><a href="../../acercaDelControlAsistencia/introduccion.html"> Introduccion</a></li>
-                        <li><a href="../../acercaDelControlAsistencia/infraestructura.html"> Infraestructura</a></li>
-                        <li><a href="../../acercaDelControlAsistencia/contacto.html"> Contacto</a></li>
-                        <li><a href="../../acercaDelControlAsistencia/procedimiento.html"> Procedimiento</a></li>
-                        <li><a href="../../acercaDelControlAsistencia/normativa.html"> Normativa</a></li>
-                    </ul>
-                </ul>
+                <!-- -------------------------------------------- -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="border border-light"><i class="fas fa-bars txt-white"></i></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="text-white navbar-nav mr-auto text-center">
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./html/acercaDelControlAsistencia/introduccion.html">
+                                Introduccion</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./html/acercaDelControlAsistencia/infraestructura.html">
+                                Infraestructura</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./html/acercaDelControlAsistencia/contacto.html">
+                                Contacto</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./html/acercaDelControlAsistencia/procedimiento.html">
+                                Procedimiento</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./html/acercaDelControlAsistencia/normativa.html">
+                                Normativa</a>
+                        </li>
+                        <div class="input-group md-form form-sm form-2 pl-0">
+                            <input class="form-control my-0 py-1 amber-border" type="text" placeholder="Search" aria-label="Search">
+                            <div class="input-group-append">
+                                <span class="input-group-text amber lighten-3" id="basic-text1"><i
+                                        class="fas fa-search text-grey" aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                </div>
             </nav>
+            <!-- ------------------------------- -->
         </header>
         <div class="contenedor centrar">
-            <h1 class="display-2">Reporte de Asistencia</h1>
+            <h1 class="display-2 text-center">Reporte de Asistencia</h1>
             <p class="text-center">
-                Los Reportes del Sistema de Control de
-                Asistencia pueden ser filtrados por rango<br>
-                de fechas facilitando la selección del período
-                y sin necesidad de realizar cierres del período.<br>
-                También se puede seleccionar por Trabajador, Departamento,
-                Categoría, Grupo y Turno. Se pueden <br>
-                exportar los reportes a Archivo Texto, Word ó Excel. Formatos de Reporte:
+                Los Reportes del Sistema de Control de Asistencia pueden ser filtrados por rango<br> de fechas facilitando la selección del período y sin necesidad de realizar cierres del período.<br> También se puede seleccionar por Trabajador, Departamento,
+                Categoría, Grupo y Turno. Se pueden <br> exportar los reportes a Archivo Texto, Word ó Excel. Formatos de Reporte:
             </p>
         </div>
         <div class="bottom">
@@ -54,55 +82,54 @@
         <h1 class="titulo display-3">REPORTE</h1>
         <div class="w-75">
             <div class="cenHor">
-                <img class=h-90px mr-btm-5px" src="../../../images/SVG/past.svg" alt="flechaIzq.svg">
-                <div class="centrar">
-                    <h1 class="titulo">AGOSTO DEL 2019</h1>
-                    <h2 class="titulo">Días a descontar: 0.</h2>
+                <img class="h-90px mr-btm-5px " src="../../../images/SVG/past.svg " alt="flechaIzq.svg ">
+                <div class="centrar ">
+                    <h1 class="titulo text-center ">AGOSTO DEL 2019</h1>
+                    <h2 class="titulo ">Días a descontar: 0.</h2>
                 </div>
-                <img class="h-90px mr-btm-5px" src="../../../images/SVG/next.svg" alt="flechaIzq.svg">
+                <img class="h-90px mr-btm-5px " src="../../../images/SVG/next.svg " alt="flechaIzq.svg ">
             </div>
 
-            <div>
-
-                <table class="table text-center">
-                    <thead class="thead-orange text-center">
+            <div class="table-responsive">
+                <table class="table text-center ">
+                    <thead class="thead-orange text-center ">
                         <tr>
-                            <th scope="col">DIA</th>
-                            <th scope="col">RETARDOS</th>
-                            <th scope="col">FALTAS</th>
-                            <th scope="col">JUSTIFUCACION</th>
+                            <th scope="col ">DIA</th>
+                            <th scope="col ">RETARDOS</th>
+                            <th scope="col ">FALTAS</th>
+                            <th scope="col ">JUSTIFUCACION</th>
                         </tr>
                     </thead>
-                    <tbody class="txt-white">
+                    <tbody class="txt-white ">
                         <tr>
-                            <th scope="row">1</th>
+                            <th scope="row ">1</th>
                             <td>1</td>
                             <td>0</td>
                             <td>
                                 Ninguna
-                                <img class="imgIcon" src="../../../images/SVG/more.svg" alt="mas.svg">
+                                <img class="imgIcon " src="../../../images/SVG/more.svg " alt="mas.svg ">
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">2</th>
+                            <th scope="row ">2</th>
                             <td>1</td>
                             <td>0</td>
                             <td>
                                 Jornada Especial
-                                <img class="imgIcon" src="../../../images/SVG/more.svg" alt="mas.svg">
+                                <img class="imgIcon " src="../../../images/SVG/more.svg " alt="mas.svg ">
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">10</th>
+                            <th scope="row ">10</th>
                             <td>0</td>
                             <td>1</td>
                             <td>
                                 Ninguna
-                                <img class="imgIcon" src="../../../images/SVG/more.svg" alt="mas.svg">
+                                <img class="imgIcon " src="../../../images/SVG/more.svg " alt="mas.svg ">
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">1</th>
+                            <th scope="row ">1</th>
                             <td>1</td>
                             <td>0</td>
                             <td></td>
@@ -111,8 +138,8 @@
                 </table>
             </div>
         </div>
-        <a href="../bienvenidoLogin.html">
-            <img class="h-120px mr-btm-5px" src="../../../images/SVG/atras-white.svg" alt="atras.png">
+        <a href="../bienvenidoLogin.html ">
+            <img class="h-120px mr-btm-5px " src="../../../images/SVG/atras-white.svg " alt="atras.png ">
         </a>
     </section>
 

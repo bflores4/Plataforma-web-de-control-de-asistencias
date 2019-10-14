@@ -9,34 +9,64 @@
     <link rel="stylesheet" href="../../../css/estilo.css" />
     <link rel="stylesheet" href="../../../founts/fontawesome-free-5.11.2-web/css/all.css" />
     <link rel="stylesheet" href="../../../css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
     <section id="capturarIncapMain" class="seccion ">
         <header class="bg-black">
             <nav class="navbar navbar-expand-lg">
-                <a href="https://www.ucol.mx">
+                <a>
                     <img id="logoUdc" src="../../../images/logoUDC.png" alt="logoUDC.png" />
                 </a>
-                <ul class="text-white list-unstyled">
-                    <li><i class="fas fa-search"></i></li>
-                    <ul class="list-unstyled">
-                        <li><a href="../../acercaDelControlAsistencia/introduccion.html"> Introduccion</a></li>
-                        <li><a href="../../acercaDelControlAsistencia/infraestructura.html"> Infraestructura</a></li>
-                        <li><a href="../../acercaDelControlAsistencia/contacto.html"> Contacto</a></li>
-                        <li><a href="../../acercaDelControlAsistencia/procedimiento.html"> Procedimiento</a></li>
-                        <li><a href="../../acercaDelControlAsistencia/normativa.html"> Normativa</a></li>
-                    </ul>
-                </ul>
+                <!-- -------------------------------------------- -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="border border-light"><i class="fas fa-bars txt-white"></i></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="text-white navbar-nav mr-auto text-center">
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./html/acercaDelControlAsistencia/introduccion.html">
+                                Introduccion</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./html/acercaDelControlAsistencia/infraestructura.html">
+                                Infraestructura</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./html/acercaDelControlAsistencia/contacto.html">
+                                Contacto</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./html/acercaDelControlAsistencia/procedimiento.html">
+                                Procedimiento</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./html/acercaDelControlAsistencia/normativa.html">
+                                Normativa</a>
+                        </li>
+                        <div class="input-group md-form form-sm form-2 pl-0">
+                            <input class="form-control my-0 py-1 amber-border" type="text" placeholder="Search" aria-label="Search">
+                            <div class="input-group-append">
+                                <span class="input-group-text amber lighten-3" id="basic-text1"><i
+                                        class="fas fa-search text-grey" aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                </div>
             </nav>
+            <!-- ------------------------------- -->
         </header>
         <div class="contenedor centrar text-center">
             <h1 class="display-2">Capturar incapacidades</h1>
             <p>
-                Capturar los adatos de tu
-                incapacidad y agrega las<br>
-                fotografias necesarias para
-                validar el documento
+                Capturar los adatos de tu incapacidad y agrega las<br> fotografias necesarias para validar el documento
             </p>
         </div>
         <div class="bottom">
@@ -47,8 +77,8 @@
         <div class="top">
             <a href="#capturarIncapMain"><i class="fas fa-angle-up txt-white upDown"></i></a>
         </div>
-        <div class="w-50">
-            <h1 class="titulo display-3">Datos de incapacidad</h1>
+        <div class="w-50 ">
+            <h1 class="titulo display-3 ">Datos de incapacidad</h1>
             <div class="d-flex justify-content-between mr-btm-5px">
                 <a class="txt-white display-4">Inicio</a>
                 <input class="w-50 br-rd">
@@ -67,10 +97,10 @@
             </div>
         </div>
         <div class="imgContainer cenVer">
-            <a href="./capturada.html"> 
+            <a href="./capturada.html">
                 <img class="h-120px mr-btm-5px" src="../../../images/SVG/check.svg" alt="check.png">
             </a>
-            <a href="./incapacidades.html"> 
+            <a href="./incapacidades.html">
                 <img class="h-120px mr-btm-5px" src="../../../images/SVG/atras-white.svg" alt="atras.png">
             </a>
         </div>
